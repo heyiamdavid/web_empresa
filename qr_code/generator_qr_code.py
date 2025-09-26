@@ -10,7 +10,7 @@ qr = qrcode.QRCode(
 )
 qr.add_data(texto)
 qr.make(fit=True)
-qr_img = qr.make_image(fill_color="black", back_color="white").convert("RGB")
+qr_img = qr.make_image(fill_color="blue", back_color="white").convert("RGB")
 logo = Image.open("assets/images/prueba.png")
 qr_width, qr_height = qr_img.size
 logo_size = qr_width // 5
@@ -23,5 +23,6 @@ draw.rectangle(
     fill="white"
 )
 qr_img.paste(logo, pos, mask=logo if logo.mode == "RGBA" else None)
-qr_img.save("assets/qr_image/qr_logo2.png")
+qr_img.save("assets/qr_image/qr_logo.png")
+
 
