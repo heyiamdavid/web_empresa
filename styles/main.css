@@ -1,0 +1,19 @@
+.hero {
+    text-align: center;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    padding: 240px 20px;
+    color: #000;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    padding: 10px 60px;
+}
